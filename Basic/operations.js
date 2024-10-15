@@ -7,3 +7,12 @@ console.log(+true); // 1
 console.log(+""); // 0
 
 // increment operator
+
+
+//
+console.log(typeof "false");
+// console.log(true)
+console.log(3 + 6 > 5.0);
+console.log(5 == "5");
+console.log(`${5 !== "5.0"}`);
+console.log(5 === "5.0000");

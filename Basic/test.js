@@ -13,7 +13,7 @@ let password = "jsxnodebun";
 let city;   // undefined
 console.table([username, email, password, city]);
 
-let bnum = 7312945684316789213214554715000n;
+let bnum = 7_312_945_684_316_789_213_214_554_715_000n;
 console.log(typeof bnum)    // bigint
 
 const data = [
@@ -23,3 +23,4 @@ const data = [
 ];
 
 console.table(data);
+
