@@ -11,8 +11,15 @@ undefined => NaN
 true => 1, false => 0
 */
 
-let loginstatus = "";
-let boolLoginstatus = Boolean(loginstatus);
-console.log(typeof scoreNum);   // After conversion always type is shown as number
-console.log(scoreNum);
- 
+let isloggedin = -23.56;
+let boolIsLoggedin = Boolean(isloggedin);
+console.log(typeof boolIsLoggedin);   // After conversion always type is shown as boolean
+console.log(boolIsLoggedin);
+/*
+"" => false
+"any string" => true
+0 => false
+NaN => false
+undefined => false
+non-zero int,float numbers => true
+*/
