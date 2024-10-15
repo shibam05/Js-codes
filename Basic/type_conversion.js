@@ -23,3 +23,8 @@ NaN => false
 undefined => false
 non-zero int,float numbers => true
 */
+
+let someNum = 33;
+let strNum = String(someNum);   
+console.log(typeof strNum);     // string
+console.log(strNum)
