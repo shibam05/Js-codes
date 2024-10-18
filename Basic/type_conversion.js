@@ -1,3 +1,4 @@
+// deno-lint-ignore-file prefer-const
 let score = "35abcd";
 let scoreNum = Number(score);
 console.log(typeof scoreNum);   // After conversion always type is shown as number

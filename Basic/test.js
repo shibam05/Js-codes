@@ -1,9 +1,11 @@
+// deno-lint-ignore-file prefer-const
 "use strict"
 
 const currentDate = new Date();
 console.log(currentDate);
 
 const username = "sbiswas";
+// deno-lint-ignore no-unused-vars
 let age = 20;
 let email = "sbiswas2@gmail.com";
 /*

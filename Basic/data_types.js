@@ -1,3 +1,4 @@
+// deno-lint-ignore-file prefer-const
 // Primitive -> stack memory
 // String, Number, Boolean, null, undefined, Symbol, BigInt
 
@@ -12,16 +13,22 @@ Symbol  =>  symbol
 BigInt  =>  bigint
 */
 
-const game = new String("Max payne");
+const game = new String("Max_payne_2008");
 console.log(typeof game); // object
 // console.log(game.__proto__);
 console.log(game.indexOf('x'));
 console.log(game.trim())
+console.log(game.split('_'))
 const newgame = game.slice(0, 5);
 console.log(newgame);
 
 const tempstr = "      what the hell   ";
 console.log(tempstr.trim())
+const url = "https://sb.com/sb%20biswas"
+url.replace("%20","-")
+console.log(url);
+console.log(url.includes("sn"));
+
 
 
 // Non-primitive (reference) -> Heap memory
