@@ -1,4 +1,3 @@
-// deno-lint-ignore-file prefer-const
 "use strict"
 
 const currentDate = new Date();

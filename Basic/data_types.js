@@ -1,4 +1,3 @@
-// deno-lint-ignore-file prefer-const
 // Primitive -> stack memory
 // String, Number, Boolean, null, undefined, Symbol, BigInt
 

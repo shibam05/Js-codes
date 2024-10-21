@@ -1,4 +1,3 @@
-// deno-lint-ignore-file prefer-const
 let s1 = "hello", s2 = "programmer";
 console.log(s1 + s2)
 console.log("1" + 2); // 12
