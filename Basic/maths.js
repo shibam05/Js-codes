@@ -10,7 +10,7 @@ console.log(score);
 
 const balance = new Number(100.975)
 console.log(balance);
-console.log(`The range of Number in JS is from ${Number.MIN_SAFE_INTEGER} to ${Number.MAX_SAFE_INTEGER}`);
+console.log(`The range of integer in JS is from ${Number.MIN_SAFE_INTEGER} to ${Number.MAX_SAFE_INTEGER}`);
 
 console.log(balance.toString().length);
 console.log(balance.toFixed(2));
