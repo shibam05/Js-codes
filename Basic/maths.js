@@ -36,7 +36,7 @@ console.log(hundreads.toLocaleString('en-IN'));
 
 */
 // console.log(Math);
-const s = Math.sqrt(3/4)
+const s = Math.sqrt(3 / 4)
 console.log(s);
 
 
