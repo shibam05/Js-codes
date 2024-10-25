@@ -11,3 +11,19 @@ const dateFormats = [
 
 console.table(dateFormats);
 
+// confusing. ++++++++++++ visit https://javascript.info/date +++++++++++++
+
+let createDate = new Date("2024,1,25")    //-> 2024-01-27T18:30:00.000Z
+console.log(createDate.toLocaleString());
+let timeStamp = Date.now();
+console.log(timeStamp);     // -> in miliseconds
+
+let newDate = new Date();
+console.log(newDate.getMonth()); // month no. - 1
+console.log(newDate.toLocaleString('default', {
+    weekday: "long",
+    timeZone: "America/New_York"
+}));
+
+let examDay = new Date("2024-12-10T10:30:00.009")
+console.log(examDay.toLocaleString());
