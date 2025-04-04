@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur code</title>
+</head>
+
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    // SELECTING ELEMENTS
+    const parent = document.querySelector('.parent') // Selects the first element with class 'parent'
+    console.log(parent); // Logs the parent element to console
+
+    // WORKING WITH CHILDREN
+    console.log(parent.children); // Logs HTML Collection of all child elements
+    console.log(parent.children[1].innerHTML); // Logs the text content of the second child (Tuesday)
+
+    // This loop prints the content of each child element
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);
+    // }
+
+    // MANIPULATING STYLES
+    parent.children[1].style.color = "orange" // Changes Tuesday's text color to orange
+
+    // ACCESSING FIRST AND LAST CHILDREN
+    console.log(parent.firstElementChild); // Logs the first child element (Monday)
+    console.log(parent.lastElementChild); // Logs the last child element (Thursday)
+
+    // SELECTING A SPECIFIC ELEMENT AND EXPLORING RELATIONSHIPS
+    const dayOne = document.querySelector('.day') // Selects only the first element with class 'day' (Monday)
+    console.log(dayOne); // Logs the first day element
+    console.log(dayOne.parentElement); // Logs the parent element of dayOne (the div with class 'parent')
+    console.log(dayOne.nextElementSibling); // Logs the next sibling element (Tuesday)
+
+    // NODES VS ELEMENTS
+    console.log("NODES: ", parent.childNodes); // Logs all child nodes (includes text nodes, comments, etc.)
+</script>
+
+</html>
