@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding for the document -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> This line is commented out but would force IE to use latest rendering engine -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes page responsive on mobile devices -->
+    <title>DOM Part 2</title> <!-- Sets the browser tab title -->
+</head>
+
+<body style="background-color: #212121; color: #fff;"> <!-- Sets dark background with white text -->
+    <!-- Note: The body is empty - we'll create and add elements using JavaScript -->
+</body>
+<script>
+    // Create a new div element in memory (not yet added to the DOM)
+    const div = document.createElement('div')
+    console.log(div); // Log the newly created element to console
+
+    // Set HTML attributes directly using properties
+    div.title = "Main Title" // Sets the title attribute (shows as tooltip on hover)
+
+    // Generate random ID between 1-11 for the div
+    div.id = Math.round(Math.random() * 10 + 1)
+
+    // Another way to set attributes - this overwrites the previous title
+    div.setAttribute("title", "Generated title")
+
+    // Set CSS styles using the style property
+    div.style.backgroundColor = "blue" // Sets background color to blue
+    div.style.padding = "12px" // Adds 12px padding around content
+
+    // COMMENTED OUT: Direct way to set text content
+    // div.innerText = "This is InnerText"
+
+    // Alternative method to add text content:
+    // 1. Create a text node
+    const addInnerText = document.createTextNode("Second Method of InnerText")
+
+    // 2. Append the text node as a child of the div
+    div.appendChild(addInnerText)
+
+    // NOTE: If the div is created but never appended to the document,it won't be visible on the page
+    document.body.appendChild(div)
+</script>
+
+</html>
